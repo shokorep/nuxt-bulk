@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <logo /><logo /><logo />
+      <link-button />
       <h1 class="title">
         nuxt-bulk
       </h1>
@@ -30,10 +31,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import LinkButton from '~/components/Button.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    LinkButton
   }
 }
 </script>
