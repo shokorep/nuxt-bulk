@@ -22,8 +22,10 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+ css: [
+  'reset-css', // 上記でインスールしていれば
+  '~/assets/scss/style.scss'
+],
   /*
   ** Plugins to load before mounting the App
   */
@@ -40,7 +42,15 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    // scssを各コンポーネントに適用する(TODO なぜか通らないのであとで確認する)
+    // https://github.com/nuxt-community/style-resources-module/blob/master/README.md
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      '~/assets/scss/_variable.scss' // 読みませたいscssファイルを指定。
+    ]
+  },
   /*
   ** Build configuration
   */
