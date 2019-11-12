@@ -1,5 +1,10 @@
 <template>
   <div class="page-index">
+  <div>
+  <h2 class="section-title">ナビ</h2>
+  <nuxt-link to="/about">about page</nuxt-link>
+  
+  </div>
     <section class="about">
       <h2 class="section-title">夏目漱石</h2>
       <article-body>
